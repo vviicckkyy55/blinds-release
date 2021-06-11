@@ -1,0 +1,59 @@
+
+/* Card folder */
+
+
+.videoCard {
+  margin-bottom: 40px;
+  width: 270px;
+}
+
+.videoCard_thumbnail {
+  height: 140px;
+  width: 250px;
+}
+
+.videoCard_info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.videoCard_text {
+  margin-left: 15px;
+}
+
+.videoCard_text > h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.videoCard_text > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.iconCard {
+  display: flex;
+  width: 20rem;
+  height: 12rem;
+  /* align-items: center; */
+  margin: 0rem 0.5rem 1rem 0rem;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  position: relative;
+  z-index: -1;
+  color:#756793;
+}
+
+.iconCard_thumbnail {
+  margin: auto;
+  font-size: initial;
+  transform: scale(6);
+  /* color: #756793; */
+  /* border: 1px solid gray; */
+}
+
+.iconCard:hover {
+  color: gainsboro;
+}
+

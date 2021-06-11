@@ -1,0 +1,54 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch server --exec node --experimental-modules index.js"
+  },
+  "author": "vinciis",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^5.8.5",
+    "aws-sdk": "^2.923.0",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-fileupload": "^1.2.1",
+    "express-jwt": "^6.0.0",
+    "express-validator": "^6.11.1",
+    "ffmpeg": "0.0.4",
+    "firebase": "^8.6.5",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.9",
+    "mongoose-sequence": "^5.3.1",
+    "multer": "^1.4.2",
+    "videojs": "^1.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
+  },
+  "keywords": [
+    "media",
+    "server",
+    "video",
+    "node",
+    "js",
+    "node.js",
+    "rest",
+    "api"
+  ]
+}
