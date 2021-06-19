@@ -2,7 +2,7 @@ import express from 'express';
 import multer from 'multer';
 import AWS from 'aws-sdk';
 import Document from '../models/Document.js';
-import generateThumbnail from '../helpers/videoThumbnail.js';
+// import generateThumbnail from '../helpers/videoThumbnail.js';
 import checkAuth from '../helpers/check-auth.js';
 
 const uploadFileRouter = express.Router();
@@ -36,12 +36,12 @@ uploadFileRouter.route('/:id').get((req, res, next) => {
 });
 
 uploadFileRouter.post('/', checkAuth, upload.single('file'), function (req, res) {
-  generateThumbnail(
-    'http://localhost:3333/api/videos/' + req.file.originalname.replace(/ /g, '_'),
-    req.file.originalname.replace(/ /g, '_'),
-    req.userData.name,
-    req.userData._id,
-  );
+//   generateThumbnail(
+//     'http://localhost:3333/api/videos/' + req.file.originalname.replace(/ /g, '_'),
+//     req.file.originalname.replace(/ /g, '_'),
+//     req.userData.name,
+//     req.userData._id,
+//   );
   const file = req.file;
   const s3FileURL = process.env.AWS_UPLOADED_FILE_URL_LINK;
 
