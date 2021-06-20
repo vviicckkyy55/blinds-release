@@ -11,6 +11,7 @@
   "author": "vinciis",
   "license": "ISC",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@google-cloud/storage": "^5.8.5",
     "aws-sdk": "^2.923.0",
     "axios": "^0.21.1",
@@ -26,6 +27,7 @@
     "express-validator": "^6.11.1",
     "ffmpeg": "0.0.4",
     "firebase": "^8.6.5",
+    "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.9",
